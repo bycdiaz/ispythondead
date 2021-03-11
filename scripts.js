@@ -117,7 +117,7 @@ function create(elementType, className, text) {
 function renderStatus() {
   const currentStatus = pythonStatus();
   const snakeEmoji = String.fromCodePoint(0x1F40D);
-  const statusText = create('p', 'status-container', currentStatus);
+  const statusText = create('p', 'status-text', currentStatus);
   const snakeEmojiContainer = create('p', 'snake-emoji', snakeEmoji);
 
   statusContainer.append(statusText, snakeEmojiContainer);
