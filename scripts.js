@@ -1,7 +1,29 @@
 const root = document.querySelector('#root');
-// const statusOptions = [false, false, false, false, false, false, false, false, false, false,false, false, false, false, false];
+const statusOptions = [
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false
+];
 
-const isItDead = false;
+const randomNumber = Math.floor(Math.random() * statusOptions.length);
+const isItDead = statusOptions[randomNumber];
 
 const pythonStatus = () => isItDead ? 'It is dead.' : 'It is not dead.';
 
