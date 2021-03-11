@@ -4,6 +4,10 @@ body {
   background: linear-gradient(#306998, 80%, #FFD43B) fixed;
 }
 
+.older-than-ruby {
+  text-align: center;
+}
+
 .content {
   display: flex;
   flex-direction: column;
