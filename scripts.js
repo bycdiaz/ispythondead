@@ -102,9 +102,9 @@ const statusOptions = [
   false
 ];
 const randomNumber = Math.floor(Math.random() * statusOptions.length);
-const isItDead = statusOptions[randomNumber];
+const isDead = statusOptions[randomNumber];
 
-const pythonStatus = () => isItDead ? 'It is dead.' : 'It is not dead.';
+const pythonStatus = () => isDead ? 'I am dead.' : 'I am not dead.';
 
 function create(elementType, className, text) {
   const element = document.createElement(`${elementType}`);
