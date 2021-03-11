@@ -1,4 +1,4 @@
-const root = document.querySelector('#root');
+const statusContainer = document.querySelector('.status-container');
 const statusOptions = [
   false,
   false,
@@ -116,9 +116,11 @@ function create(elementType, className, text) {
 
 function renderStatus() {
   const currentStatus = pythonStatus();
+  const snakeEmoji = String.fromCodePoint(0x1F40D);
   const statusText = create('p', 'status-container', currentStatus);
+  const snakeEmojiContainer = create('p', 'snake-emoji', snakeEmoji);
 
-  root.appendChild(statusText);
+  statusContainer.append(statusText, snakeEmojiContainer);
 }
 
 renderStatus();
